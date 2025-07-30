@@ -463,6 +463,16 @@ body {
     .nav-brand {
       font-size: 1.1em;
     }
+    section.cta-section {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+    .btn {
+        margin: 10px;
+        text-align: center;
+    }
   }
   
   /* Dark Mode */
