@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Initiatives – Politician Name</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="nav-brand">Shiv Sena Corporator</div>
+          
+          <!-- Hamburger button only visible on mobile -->
+          <button class="nav-toggle" aria-label="toggle navigation" tabindex="0">
+            <span class="hamburger"></span>
+          </button>
+          
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Initiatives</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+      
+          <!-- Controls: language switcher + dark toggle -->
+          <div class="header-controls">
+            <select id="lang-switch" aria-label="Select Language">
+              <option value="en">EN</option>
+              <option value="hi">HI</option>
+              <option value="mr">MR</option>
+            </select>
+            <button id="dark-toggle" aria-label="Toggle Dark Mode">🌙</button>
+          </div>
+        </nav>
+      </header>
+      
+      
+
+  <!-- Initiatives Hero -->
+  <section class="hero"
+    style="background:url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;">
+    <div class="hero-text" style="background:rgba(0,52,80,.7);color:#fff;padding:2.7em 2em;border-radius:1em;">
+      <h1>Our Initiatives</h1>
+      <p>Tangible impact, proven results. Empowering every family, every street, every future.</p>
+    </div>
+  </section>
+
+  <section class="initiatives-list" style="background:#f6fcfa;">
+    <div class="cards-container">
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" class="service-img" alt="Health Camp">
+        <h4>Health Camps</h4>
+        <p>Free check-ups, vaccination drives, and women’s wellness camps for <b>8,000+ citizens</b> yearly.</p>
+        <div class="progress"><div style="width:85%"></div></div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=400&q=80" class="service-img" alt="School Upgrade">
+        <h4>School Upgrades</h4>
+        <p>Digital classrooms and modern sanitation in <b>12 municipal schools</b>.</p>
+        <div class="progress"><div style="width:70%"></div></div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80" class="service-img" alt="Sanitation Drive">
+        <h4>Sanitation Drives</h4>
+        <p>Every week, <b>100km of roads</b> cleaned by green teams.</p>
+        <div class="progress"><div style="width:93%"></div></div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" class="service-img" alt="Women Empowerment">
+        <h4>Women Empowerment</h4>
+        <p>Skill centres, training, and self-help groups for <b>2,000+ women</b>.</p>
+        <div class="progress"><div style="width:77%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="metrics" style="background:#eaf2fb;">
+    <div class="metrics-content">
+      <h3>Impact in Numbers</h3>
+      <p>
+        <b>28+ projects completed</b> &nbsp; | &nbsp; <b>32,000+ lives improved</b> <br>
+        <b>₹82 lakhs+ invested</b> in public development
+      </p>
+      <a href="annual-report.pdf" class="btn accent" download>Download Initiatives Report (PDF)</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Politician Name
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

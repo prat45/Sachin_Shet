@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Politician Name - Ward Corporator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Language Switcher and Dark Mode -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">Shiv Sena Corporator</div>
+      
+      <!-- Hamburger button only visible on mobile -->
+      <button class="nav-toggle" aria-label="toggle navigation" tabindex="0">
+        <span class="hamburger"></span>
+      </button>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Initiatives</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+  
+      <!-- Controls: language switcher + dark toggle -->
+      <div class="header-controls">
+        <select id="lang-switch" aria-label="Select Language">
+          <option value="en">EN</option>
+          <option value="hi">HI</option>
+          <option value="mr">MR</option>
+        </select>
+        <button id="dark-toggle" aria-label="Toggle Dark Mode">🌙</button>
+      </div>
+    </nav>
+  </header>
+  
+  
+  <!-- Hero Section -->
+  <!-- Hero Section with high-quality Unsplash Image -->
+<section class="hero" style="background:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center center/cover no-repeat;">
+    <div class="hero-text" style="background:rgba(0,0,0,0.5);padding:2em;border-radius:12px;color:#fff;">
+      <h1>Politician Name</h1>
+      <p>Ward Corporator</p>
+      <h2>Your Voice, Our Commitment!</h2>
+      <div class="cta-btns">
+        <a href="#volunteer" class="btn accent">Volunteer</a>
+        <a href="about.html" class="btn light">Know More</a>
+      </div>
+    </div>
+    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Politician Image" class="profile-img" />
+  </section>
+  
+  <!-- Mission Statement -->
+  <section class="mission">
+    <h3>Mission Statement</h3>
+    <p>Committed to inclusive development, transparency, and empowering every citizen.</p>
+  </section>
+  <!-- Latest Updates/News Slider -->
+  <section class="news-slider">
+    <h3>Latest Updates</h3>
+    <div class="slider" id="newsSlider">
+      <div class="slide active">🗞️ Campaign launched for clean water (1 July, 2025)</div>
+      <div class="slide">📝 Press Release: Improving local schools (15 June, 2025)</div>
+      <div class="slide">🏥 Free health camp organized!</div>
+    </div>
+    <button onclick="prevSlide()">‹</button>
+    <button onclick="nextSlide()">›</button>
+  </section>
+  <!-- Highlighted Projects -->
+  <section class="projects-carousel">
+    <h3>Highlighted Projects</h3>
+    <div class="carousel">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=500&q=80" alt="Clean Water Project">
+        <h4>Community Water Purification</h4>
+        <p>Access to safe drinking water for 10,000+ families.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=500&q=80" alt="School Upgrade">
+        <h4>School Modernization</h4>
+        <p>Modern amenities and digital classrooms in 15 schools.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=500&q=80" alt="Healthcare Project">
+        <h4>Mobile Health Camps</h4>
+        <p>Bringing quality healthcare to the doorsteps.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h3>Testimonials</h3>
+    <div class="testimony">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" class="avatar" alt="Asha K.">
+      <div>
+        <p>"She listens to us and gets things done!"</p>
+        <h5>- Asha K., Resident</h5>
+      </div>
+    </div>
+    <div class="testimony">
+      <img src="https://randomuser.me/api/portraits/men/45.jpg" class="avatar" alt="R. Verma">
+      <div>
+        <p>"Transparent and approachable. A true leader."</p>
+        <h5>- R. Verma, NGO Volunteer</h5>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Embedded Video/Intro Speech -->
+  <section class="intro-video">
+    <h3>Watch Our Vision</h3>
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/D_2WBfGYfsQ?si=KA3MhWg0Srs6Ba4v" title="Intro Speech" frameborder="0" allowfullscreen></iframe>
+  </section>
+  <!-- Call to Action Buttons -->
+  <section class="cta-section">
+    <a href="contact.html#grievance" class="btn">Submit Grievance</a>
+    <a href="contact.html#volunteer" class="btn">Join Campaign</a>
+    <a href="contact.html#donate" class="btn">Donate</a>
+    <a href="https://facebook.com/" class="btn">Follow on Facebook</a>
+  </section>
+  <footer>
+    &copy; 2025 Politician Name | Designed by Your Team
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
