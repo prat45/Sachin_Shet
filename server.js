@@ -25,7 +25,7 @@ app.post('/submit-contact', async (req, res) => {
       service: 'gmail',
       auth: {
         user: 'prathamshivekar12@gmail.com',        // <-- YOUR Gmail address
-        pass: 'Pratham12@3',    // <-- YOUR Gmail App Password (not your Gmail password)
+        pass: 'pass',    // <-- YOUR Gmail App Password (not your Gmail password)
       },
     });
 
