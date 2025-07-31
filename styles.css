@@ -522,4 +522,65 @@ body {
   img.service-img {
     width: 100%;}
   
+
+
+    /* crausal in about page */
+
+    .photo-gallery-carousel {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        max-width: 900px;
+        margin: auto;
+      }
+      
+      .carousel-track-container {
+        overflow: hidden;
+        width: 100%;
+      }
+      
+      .carousel-track {
+        list-style: none;
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .carousel-slide {
+        min-width: 250px; /* adjust image container width */
+        margin-right: 0em;
+        flex-shrink: 0;
+      }
+      
+      .carousel-slide img {
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+        object-fit: cover;
+        height: 100%; /* fixed height for uniformity */
+      }
+      
+      .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255,255,255,0.8);
+        border: none;
+        font-size: 2em;
+        padding: 0 0.3em;
+        cursor: pointer;
+        border-radius: 5px;
+        user-select: none;
+        z-index: 10;
+      }
+      
+      .carousel-btn.prev {
+        left: 10px;
+      }
+      
+      .carousel-btn.next {
+        right: 10px;
+      }
+      
   
