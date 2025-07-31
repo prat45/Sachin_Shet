@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 2em;
     background: #e5f1ff;
     gap: 2em;
@@ -28,7 +28,7 @@ body {
   }
   .hero h1 {
     font-size: 2.5em;
-    color: #004aad;
+    /* color: #004aad; */
   }
   .hero-text {
     box-shadow: 0 12px 32px rgba(20, 60, 100, 0.26);
@@ -181,6 +181,10 @@ body {
       flex-direction: column;
       gap: 0.5em;
     }
+    .hero {
+        
+        aspect-ratio: unset !important;
+    }
   }
   
   @media (max-width: 880px) {
@@ -234,10 +238,12 @@ body {
     gap: 2em;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .bio-img {
-    border-radius: 50%;
+    border-radius: 20%;
     width: 140px;
+    padding: 10px;
     box-shadow: 0 4px 20px #89a;
   }
   
@@ -503,4 +509,17 @@ body {
     background-color: #004aad; 
     color: #fff;
   } */
+
+  /* body {
+    background: url('IMG_6137.JPG') center/cover no-repeat #faf8f6;
+  } */
+
+  .section-bg {
+    background: url('https://onsite-assets-editor.s3.amazonaws.com/images/we10a5cb699/IMG_6133.JPG') center/cover no-repeat;
+    background-blend-mode: multiply;
+  }
+
+  img.service-img {
+    width: 100%;}
+  
   
