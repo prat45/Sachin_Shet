@@ -75,4 +75,42 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   
+//   for about page slider
+
+document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.carousel-btn.next');
+    const prevButton = document.querySelector('.carousel-btn.prev');
+  
+    // Width of one slide + margin (adjust if you change CSS)
+    const slideWidth = slides[0].getBoundingClientRect().width + 16; // 16px = margin-right (1em approx)
+  
+    let currentIndex = 0;
+  
+    function moveToSlide(index) {
+      // Clamp index between 0 and max possible
+      const maxIndex = slides.length - Math.floor(track.parentElement.offsetWidth / slideWidth);
+      if (index < 0) index = 0;
+      if (index > maxIndex) index = maxIndex;
+  
+      track.style.transform = `translateX(-${index * slideWidth}px)`;
+      currentIndex = index;
+    }
+  
+    nextButton.addEventListener('click', () => {
+      moveToSlide(currentIndex + 1);
+    });
+  
+    prevButton.addEventListener('click', () => {
+      moveToSlide(currentIndex - 1);
+    });
+  
+    // Optional: Auto slide every 5 seconds
+    // setInterval(() => {
+    //   let nextIndex = currentIndex + 1;
+    //   if(nextIndex > slides.length - 1) nextIndex = 0;
+    //   moveToSlide(nextIndex);
+    // }, 5000);
+  });
   
