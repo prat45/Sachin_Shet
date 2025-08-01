@@ -136,7 +136,7 @@ body {
     flex: 1 1 280px;
   }
   input, textarea, select {
-    width: 100%;
+    width: 90%;
     margin-bottom: 1em;
     padding: 0.7em;
     border: 1px solid #bbb;
