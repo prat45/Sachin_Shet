@@ -7,44 +7,35 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-          <div class="nav-brand">
-            <img src="IMG_6138.JPG" alt="Shiv Sena Logo" style="height: 60px;
-            width: 60px;
-            display: block;
-            border-radius: 50%;" />
-          </div>
-          <!-- Hamburger button only visible on mobile -->
-          <button class="nav-toggle" aria-label="toggle navigation" tabindex="0">
-            <span class="hamburger"></span>
-          </button>
-          <ul class="nav-menu">
-            <li><a href="index.html" class="nav-link active">Home</a></li>
-            <li><a href="about.html" class="nav-link">About</a></li>
-            <li><a href="services.html" class="nav-link">Initiatives</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
-          </ul>
-          <div class="header-controls">
-            <select id="lang-switch" aria-label="Select Language">
-              <option value="en">EN</option>
-              <option value="hi">HI</option>
-              <option value="mr">MR</option>
-            </select>
-            <button id="dark-toggle" aria-label="Toggle Dark Mode">🌙</button>
-          </div>
-        </nav>
-      </header>
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">
+        <img src="IMG_6138.JPG" alt="Shiv Sena Logo" style="height: 60px; width: 60px; display: block; border-radius: 50%;" />
+      </div>
+      <!-- Hamburger button only visible on mobile -->
+      <button class="nav-toggle" aria-label="toggle navigation" tabindex="0">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Initiatives</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="header-controls">
+        <select id="lang-switch" aria-label="Select Language">
+          <option value="en">EN</option>
+          <option value="hi">HI</option>
+          <option value="mr">MR</option>
+        </select>
+        <button id="dark-toggle" aria-label="Toggle Dark Mode">🌙</button>
+      </div>
+    </nav>
+  </header>
 
   <!-- Contact Hero -->
-  <section
-    class="hero"
-    style="background: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;"
-  >
-    <div
-      class="hero-text"
-      style="background: rgba(2, 44, 65, 0.7); color: #fff; padding: 2em 2em; border-radius: 1em"
-    >
+  <section class="hero" style="background: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;">
+    <div class="hero-text" style="background: rgba(2, 44, 65, 0.7); color: #fff; padding: 2em 2em; border-radius: 1em">
       <h1>Contact & Connect</h1>
       <p>We're just a message away. Reach out, share your feedback, and join our mission.</p>
     </div>
@@ -52,10 +43,10 @@
 
   <section class="contact-main" style="background: #f6fcfa;">
     <div class="contact-flex">
+
       <!-- Contact Form -->
-     
-      <!-- <form id="contact-form" method="POST" action="/submit-contact" class="form-contact"> -->
-        <form id="contact-form" method="POST" action="http://localhost:3000/submit-contact" class="form-contact">
+      <form id="contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbxD2Vy8PTkWm6ftffEbckJO5L8bOna0qmUtzPbyQ6TfUJ7fTTC4PUtzPh6G2BKddI-3Cw/exec" class="form-contact">
+        <input type="hidden" name="form_type" value="contact" />
         <h4>Write to Us</h4>
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Email" required />
@@ -66,13 +57,8 @@
       </form>
 
       <!-- Grievance Redressal Form -->
-      <form
-        id="grievance-form"
-        method="POST"
-        action="/submit-grievance"
-        enctype="multipart/form-data"
-        class="form-grievance"
-      >
+      <form id="grievance-form" method="POST" action="https://script.google.com/macros/s/AKfycbxD2Vy8PTkWm6ftffEbckJO5L8bOna0qmUtzPbyQ6TfUJ7fTTC4PUtzPh6G2BKddI-3Cw/exec" class="form-grievance">
+        <input type="hidden" name="form_type" value="grievance" />
         <h4>Raise a Grievance</h4>
         <select name="issue" required>
           <option value="">Select Issue Type</option>
@@ -81,24 +67,26 @@
           <option value="Roads">Roads</option>
           <option value="Other">Other</option>
         </select>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Email" required />
         <input type="text" name="contact" placeholder="Contact Number" required />
-        <input type="file" name="evidence" />
+        <!-- <input type="file" name="evidence" /> --> <!-- File upload disabled as Apps Script can’t handle it well -->
         <textarea name="grievance" placeholder="Describe the Issue" required></textarea>
         <button type="submit" class="btn accent">Submit Grievance</button>
         <p id="grievance-response" class="form-response"></p>
       </form>
+
     </div>
 
-    <div
-      class="contact-info"
-      style="background: #e1e7fc; border-radius: 1em; padding: 1em"
-    >
+    <div class="contact-info" style="background: #e1e7fc; border-radius: 1em; padding: 1em">
       <p><b>Ward Office:</b> Ward 12 Civic Centre</p>
       <p><b>Timings:</b> 10am to 6pm, Mon–Sat</p>
       <p><b>Phone:</b> 9876 543210</p>
       <p><b>Email:</b> office@politician.com</p>
 
-      <form id="volunteer-form" method="POST" action="/submit-volunteer" class="form-volunteer">
+      <!-- Volunteer Form -->
+      <form id="volunteer-form" method="POST" action="https://script.google.com/macros/s/AKfycbxD2Vy8PTkWm6ftffEbckJO5L8bOna0qmUtzPbyQ6TfUJ7fTTC4PUtzPh6G2BKddI-3Cw/exec" class="form-volunteer">
+        <input type="hidden" name="form_type" value="volunteer" />
         <h4>Volunteer with Us</h4>
         <input type="text" name="volunteer_name" placeholder="Name" required />
         <input type="email" name="volunteer_email" placeholder="Email" />
@@ -114,10 +102,7 @@
       </div>
     </div>
 
-    <div
-      class="map-container"
-      style="border-radius: 1em; overflow: hidden; margin: 1em 0"
-    >
+    <div class="map-container" style="border-radius: 1em; overflow: hidden; margin: 1em 0">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18829.956114715766!2d72.8259!3d19.1469!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9d37a4d736b%3A0x94ff07d4c0e70ede!2sSagar%20Kutir%20Sangh%2C%207%20Bunglow%2C%20Sai%20Mangal%20Society%2C%20Andheri%20West%2C%20Mumbai%2C%20Maharashtra%20400061!5e0!3m2!1sen!2sin!4v1690732800000!5m2!1sen!2sin"
         width="100%"
@@ -131,12 +116,12 @@
   </section>
 
   <footer>&copy; 2025 Politician Name</footer>
+
   <script src="main.js"></script>
 
   <script>
     // JavaScript to handle form submissions asynchronously via fetch()
     document.addEventListener('DOMContentLoaded', () => {
-      // Utility function for form AJAX submission
       function handleFormSubmit(formId, responseId, url, isMultipart = false) {
         const form = document.getElementById(formId);
         const responseEl = document.getElementById(responseId);
@@ -144,21 +129,13 @@
         form.addEventListener('submit', async (e) => {
           e.preventDefault();
           responseEl.textContent = '';
-          let formData;
-
-          if (isMultipart) {
-            formData = new FormData(form);
-          } else {
-            formData = new URLSearchParams(new FormData(form));
-          }
-
+          let formData = isMultipart ? new FormData(form) : new URLSearchParams(new FormData(form));
           try {
             const res = await fetch(url, {
               method: 'POST',
               body: isMultipart ? formData : formData.toString(),
               headers: isMultipart ? undefined : { 'Content-Type': 'application/x-www-form-urlencoded' },
             });
-
             if (res.ok) {
               const text = await res.text();
               responseEl.style.color = 'green';
@@ -176,10 +153,11 @@
         });
       }
 
-      // Setup handlers for each form - update URLs as per your backend setup
-      handleFormSubmit('contact-form', 'contact-response', '/submit-contact');
-      handleFormSubmit('grievance-form', 'grievance-response', '/submit-grievance', true);
-      handleFormSubmit('volunteer-form', 'volunteer-response', '/submit-volunteer');
+      const url = 'https://script.google.com/macros/s/AKfycbxD2Vy8PTkWm6ftffEbckJO5L8bOna0qmUtzPbyQ6TfUJ7fTTC4PUtzPh6G2BKddI-3Cw/exec';
+
+      handleFormSubmit('contact-form', 'contact-response', url, false);
+      handleFormSubmit('grievance-form', 'grievance-response', url, false); // multipart false because file upload disabled
+      handleFormSubmit('volunteer-form', 'volunteer-response', url, false);
     });
   </script>
 </body>
