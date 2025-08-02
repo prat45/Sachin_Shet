@@ -44,13 +44,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   
     // Optional: close menu when clicking a nav link on mobile
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth <= 768 && navMenu.classList.contains('open')) {
-          navMenu.classList.remove('open');
-        }
+    // document.querySelectorAll('.nav-link').forEach(link => {
+    //   link.addEventListener('click', () => {
+    //     if (window.innerWidth <= 768 && navMenu.classList.contains('open')) {
+    //       navMenu.classList.remove('open');
+    //     }
+    //   });
+    // });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get current filename from URL
+        const path = window.location.pathname;
+        const file = path.substring(path.lastIndexOf('/') + 1) || 'index.html'; // Default to index.html
+    
+        // Remove 'active' from all
+        document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+    
+        // Set 'active' for the current page
+        document.querySelectorAll('.nav-link').forEach(link => {
+          if (link.getAttribute('href') === file) {
+            link.classList.add('active');
+          }
+        });
       });
-    });
   
     // Dark mode toggle (make sure you have implemented dark mode toggling code)
     const dToggle = document.getElementById('dark-toggle');
